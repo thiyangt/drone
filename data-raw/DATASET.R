@@ -28,24 +28,20 @@ OGHIST <- read_excel("data-raw/OGHIST.xlsx",
                      sheet = "Country Analytical History")
 View(OGHIST)
 dim(OGHIST)
-historical.class <- OGHIST[11:239,]
+historical.class <- OGHIST[11:228,]
 View(historical.class)
 colnames(historical.class) <- c("Code", "Country", 1987:2022)
-View(historical.class)
-subset.class.2023.aug <- class.2023.aug |>
-  select(c(1, 3, 5))
-View(subset.class.2023.aug)
-dim(historical.class) #229 38
-historical.class <- historical.class[1:218, ]
-dim(historical.class)
-dim(subset.class.2023.aug) #267 3
-historical.class <- full_join(historical.class, subset.class.2023.aug, by="Country")
 View(historical.class)
 historical.class <- historical.class %>%
   mutate_all(~na_if(., ".."))
 View(historical.class)
-#save(historical.class, file = here("data", "historical.class.rda"))
-
+historical.class <- historical.class |>
+  pivot_longer(
+    cols = "1987":"2022",
+    names_to = "Year",
+    values_to = "Income"
+  )
+View(historical.class)
 # data 3: fuel.csv
 # https://datacatalog.worldbank.org/indicator/5077c233-bdce-eb11-bacc-000d3a596ff0/Access-to-clean-fuels-and-technologies-for-cooking----of-population-
 # Access to clean fuels and technologies for cooking (% of population)
@@ -54,9 +50,76 @@ View(historical.class)
 # https://databank.worldbank.org/reports.aspx?dsid=2&series=EG.CFT.ACCS.ZS#
 fuel <- read_csv("data-raw/fuel.csv")
 View(fuel)
+fuel <- fuel |>
+  mutate_all(~na_if(., ".."))
+View(fuel)
+fuel <- fuel[1:217, -c(1, 2, 16)]
+View(fuel)
+colnames(fuel) <- c("Country",
+                           "Code",
+                           1990,
+                           2000,
+                           2013,
+                           2014,
+                           2015,
+                           2016,
+                           2017,
+                           2018,
+                           2019,
+                           2020,
+                           2021)
+View(fuel)
+fuel <- fuel |>
+  pivot_longer(
+    cols = "1990":"2021",
+    names_to = "Year",
+    values_to = "Cooking"
+  )
+View(fuel)
 
 # data 4: electricity
 # https://databank.worldbank.org/reports.aspx?dsid=2&series=EG.ELC.ACCS.ZS
 # Access To Electricity Is The Percentage Of Population With Access To Electricity. Electrification Data Are Collected From Industry, National Surveys And International Sources.
 electricity <- read_csv("data-raw/electricity.csv")
+electricity <- electricity |>
+  mutate_all(~na_if(., ".."))
 View(electricity)
+electricity <- electricity[1:217, -c(1, 2, 16)]
+View(electricity)
+colnames(electricity) <- c("Country",
+                           "Code",
+                           1990,
+                           2000,
+                           2013,
+                           2014,
+                           2015,
+                           2016,
+                           2017,
+                           2018,
+                           2019,
+                           2020,
+                           2021)
+View(electricity)
+electricity <- electricity |>
+  mutate(across(where(is.numeric), ~round(., 2)))
+View(electricity)
+electricity <- electricity |>
+  pivot_longer(
+    cols = "1990":"2021",
+    names_to = "Year",
+    values_to = "Electricity"
+  )
+View(electricity)
+
+## combine
+fuel.electricity <- full_join(fuel, 
+                              electricity, 
+                              by =c("Country",
+                                    "Code",
+                                    "Year"))
+View(fuel.electricity)
+fuel.electricity.income <- full_join(fuel.electricity, historical.class,
+                                     by =c("Country",
+                                           "Code",
+                                           "Year"))
+View(fuel.electricity.income)
