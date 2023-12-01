@@ -1,6 +1,6 @@
 ## code to prepare `DATASET` dataset goes here
 
-usethis::use_data(DATASET, overwrite = TRUE)
+#usethis::use_data(DATASET, overwrite = TRUE)
 
 ## Packages
 library(tidyverse)
@@ -17,7 +17,7 @@ CLASS <- read_excel("data-raw/CLASS.xlsx")
 class.2023.aug <- CLASS
 colnames(class.2023.aug) <- c("Country", colnames(class.2023.aug)[-1])
 View(class.2023.aug)
-#save(class.2023.aug, file = here("data", "class.2023.aug.rda"))
+class.2023.aug <- class.2023.aug[1:218, 1:3]
 
 
 # data 2: OGHIST.xlsx
@@ -123,3 +123,31 @@ fuel.electricity.income <- full_join(fuel.electricity, historical.class,
                                            "Code",
                                            "Year"))
 View(fuel.electricity.income)
+class.fuel.electricity.income <- full_join(class.2023.aug, 
+                                           fuel.electricity.income,
+                                           by =c("Country",
+                                                 "Code"))
+View(class.fuel.electricity.income)
+worldbankdata <- class.fuel.electricity.income
+worldbankdata <- as_tibble(class.fuel.electricity.income)
+worldbankdata$Income[worldbankdata$Income == "LM*"] <- "LM"
+worldbankdata$Income <- factor(worldbankdata$Income,
+                               levels = c("L",
+                                          "LM",
+                                          "UM",
+                                          "H"))
+worldbankdata$Country <- factor(worldbankdata$Country)
+worldbankdata$Code <- factor(worldbankdata$Code)
+worldbankdata$Region <- factor(worldbankdata$Region)
+worldbankdata$Electricity <- as.numeric(worldbankdata$Electricity)
+worldbankdata$Cooking <- as.numeric(worldbankdata$Cooking)
+worldbankdata$Year <- as.integer(worldbankdata$Year)
+View(worldbankdata)
+summary(worldbankdata)
+worldbankdata
+worldbankdata <- worldbankdata |>
+  mutate(across(where(is.numeric), ~round(., 2)))
+colorder <- c("ID",colnames(worldbankdata)[-8])
+worldbankdata <- worldbankdata[, colorder]
+View(worldbankdata)
+save(worldbankdata, file=here("data", "worldbankdata.rda"))
