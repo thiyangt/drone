@@ -15,7 +15,7 @@ library(readxl)
 # Accessed on 1 Dec 2023
 CLASS <- read_excel("data-raw/CLASS.xlsx")
 class.2023.aug <- CLASS
-colnames(class.2023.aug) <- c("Country", colnames(class)[-1])
+colnames(class.2023.aug) <- c("Country", colnames(class.2023.aug)[-1])
 View(class.2023.aug)
 #save(class.2023.aug, file = here("data", "class.2023.aug.rda"))
 
@@ -46,7 +46,7 @@ historical.class <- historical.class %>%
 View(historical.class)
 #save(historical.class, file = here("data", "historical.class.rda"))
 
-# data 3: 
+# data 3: fuel.csv
 # https://datacatalog.worldbank.org/indicator/5077c233-bdce-eb11-bacc-000d3a596ff0/Access-to-clean-fuels-and-technologies-for-cooking----of-population-
 # Access to clean fuels and technologies for cooking (% of population)
 # Access to clean fuels and technologies for cooking is the proportion of total population primarily using clean cooking fuels and technologies for cooking. Under WHO guidelines, kerosene is excluded from clean cooking fuels.
@@ -54,3 +54,9 @@ View(historical.class)
 # https://databank.worldbank.org/reports.aspx?dsid=2&series=EG.CFT.ACCS.ZS#
 fuel <- read_csv("data-raw/fuel.csv")
 View(fuel)
+
+# data 4: electricity
+# https://databank.worldbank.org/reports.aspx?dsid=2&series=EG.ELC.ACCS.ZS
+# Access To Electricity Is The Percentage Of Population With Access To Electricity. Electrification Data Are Collected From Industry, National Surveys And International Sources.
+electricity <- read_csv("data-raw/electricity.csv")
+View(electricity)
