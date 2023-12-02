@@ -8,16 +8,15 @@
 #'
 #' @format A data frame with n rows and m variables.
 #' \describe{
-#' \item{ID}{row id},
 #' \item{Country}{Country name},
 #' \item{Code}{Country code},
 #' \item{Region}{Country region},
 #' \item{Year}{Year},
-#' \item{Income}{a factor denoting income group (L - Low income, LM - Low middle income, UM - Upper middle income, HI - High income)},
 #' \item{Cooking}{Access to clean fuels and technologies for cooking (\% of population)},
-#' \item{}{}
+#' \item{Electricity}{}
+#' \item{Income}{a factor denoting income group (L - Low income, LM - Low middle income, UM - Upper middle income, HI - High income)}}
 #' }
-#' @source The World Bank Data Catalog (accessed on 1 Dec 2023)
+#' @source The World Bank Data Catalogue (accessed on 1 Dec 2023)
 #' @examples
 #' data(worldbankdata)
 #' head(worldbankdata)

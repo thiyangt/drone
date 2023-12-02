@@ -2,6 +2,8 @@
 
 #usethis::use_data(DATASET, overwrite = TRUE)
 
+rm(list=ls())
+
 ## Packages
 library(tidyverse)
 library(readr)
@@ -16,7 +18,7 @@ library(readxl)
 CLASS <- read_excel("data-raw/CLASS.xlsx")
 class.2023.aug <- CLASS
 colnames(class.2023.aug) <- c("Country", colnames(class.2023.aug)[-1])
-View(class.2023.aug)
+#View(class.2023.aug)
 class.2023.aug <- class.2023.aug[1:218, 1:3]
 
 
@@ -26,22 +28,22 @@ class.2023.aug <- class.2023.aug[1:218, 1:3]
 # Accessed on 1 Dec 2023
 OGHIST <- read_excel("data-raw/OGHIST.xlsx", 
                      sheet = "Country Analytical History")
-View(OGHIST)
+#View(OGHIST)
 dim(OGHIST)
 historical.class <- OGHIST[11:228,]
-View(historical.class)
+#View(historical.class)
 colnames(historical.class) <- c("Code", "Country", 1987:2022)
-View(historical.class)
+#View(historical.class)
 historical.class <- historical.class %>%
   mutate_all(~na_if(., ".."))
-View(historical.class)
+#View(historical.class)
 historical.class <- historical.class |>
   pivot_longer(
     cols = "1987":"2022",
     names_to = "Year",
     values_to = "Income"
   )
-View(historical.class)
+#View(historical.class)
 # data 3: fuel.csv
 # https://datacatalog.worldbank.org/indicator/5077c233-bdce-eb11-bacc-000d3a596ff0/Access-to-clean-fuels-and-technologies-for-cooking----of-population-
 # Access to clean fuels and technologies for cooking (% of population)
@@ -49,12 +51,12 @@ View(historical.class)
 # app to download
 # https://databank.worldbank.org/reports.aspx?dsid=2&series=EG.CFT.ACCS.ZS#
 fuel <- read_csv("data-raw/fuel.csv")
-View(fuel)
+#View(fuel)
 fuel <- fuel |>
   mutate_all(~na_if(., ".."))
-View(fuel)
+#View(fuel)
 fuel <- fuel[1:217, -c(1, 2, 16)]
-View(fuel)
+#View(fuel)
 colnames(fuel) <- c("Country",
                            "Code",
                            1990,
@@ -68,14 +70,14 @@ colnames(fuel) <- c("Country",
                            2019,
                            2020,
                            2021)
-View(fuel)
+#View(fuel)
 fuel <- fuel |>
   pivot_longer(
     cols = "1990":"2021",
     names_to = "Year",
     values_to = "Cooking"
   )
-View(fuel)
+#View(fuel)
 
 # data 4: electricity
 # https://databank.worldbank.org/reports.aspx?dsid=2&series=EG.ELC.ACCS.ZS
@@ -83,9 +85,9 @@ View(fuel)
 electricity <- read_csv("data-raw/electricity.csv")
 electricity <- electricity |>
   mutate_all(~na_if(., ".."))
-View(electricity)
+#View(electricity)
 electricity <- electricity[1:217, -c(1, 2, 16)]
-View(electricity)
+#View(electricity)
 colnames(electricity) <- c("Country",
                            "Code",
                            1990,
@@ -99,17 +101,17 @@ colnames(electricity) <- c("Country",
                            2019,
                            2020,
                            2021)
-View(electricity)
+#View(electricity)
 electricity <- electricity |>
   mutate(across(where(is.numeric), ~round(., 2)))
-View(electricity)
+#View(electricity)
 electricity <- electricity |>
   pivot_longer(
     cols = "1990":"2021",
     names_to = "Year",
     values_to = "Electricity"
   )
-View(electricity)
+#View(electricity)
 
 ## combine
 fuel.electricity <- full_join(fuel, 
@@ -117,17 +119,17 @@ fuel.electricity <- full_join(fuel,
                               by =c("Country",
                                     "Code",
                                     "Year"))
-View(fuel.electricity)
+#View(fuel.electricity)
 fuel.electricity.income <- full_join(fuel.electricity, historical.class,
                                      by =c("Country",
                                            "Code",
                                            "Year"))
-View(fuel.electricity.income)
+#View(fuel.electricity.income)
 class.fuel.electricity.income <- full_join(class.2023.aug, 
                                            fuel.electricity.income,
                                            by =c("Country",
                                                  "Code"))
-View(class.fuel.electricity.income)
+#View(class.fuel.electricity.income)
 worldbankdata <- class.fuel.electricity.income
 worldbankdata <- as_tibble(class.fuel.electricity.income)
 worldbankdata$Income[worldbankdata$Income == "LM*"] <- "LM"
@@ -142,12 +144,10 @@ worldbankdata$Region <- factor(worldbankdata$Region)
 worldbankdata$Electricity <- as.numeric(worldbankdata$Electricity)
 worldbankdata$Cooking <- as.numeric(worldbankdata$Cooking)
 worldbankdata$Year <- as.integer(worldbankdata$Year)
-View(worldbankdata)
+#View(worldbankdata)
 summary(worldbankdata)
 worldbankdata
 worldbankdata <- worldbankdata |>
   mutate(across(where(is.numeric), ~round(., 2)))
-colorder <- c("ID",colnames(worldbankdata)[-8])
-worldbankdata <- worldbankdata[, colorder]
-View(worldbankdata)
-save(worldbankdata, file=here("data", "worldbankdata.rda"))
+#View(worldbankdata)
+save(worldbankdata, file = "data/worldbankdata.RData")
