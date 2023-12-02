@@ -1,0 +1,47 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# drone: **D**ata fo**R** ge**O**m e**N**cyclopa**E**dia
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of drone is to ...
+
+## Installation
+
+You can install the development version of drone from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("thiyangt/drone")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(drone)
+```
+
+
+
+```{r cars}
+library(tibble)
+data("worldbankdata")
+worldbankdata
+```
+
