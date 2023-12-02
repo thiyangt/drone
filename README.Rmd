@@ -47,6 +47,7 @@ worldbankdata
 
 ```{r}
 library(visdat)
+vis_dat(worldbankdata)
 vis_miss(worldbankdata)
 ```
 

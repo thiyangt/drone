@@ -48,10 +48,16 @@ worldbankdata
 
 ``` r
 library(visdat)
-vis_miss(worldbankdata)
+vis_dat(worldbankdata)
 ```
 
 <img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
+
+``` r
+vis_miss(worldbankdata)
+```
+
+<img src="man/figures/README-unnamed-chunk-2-2.png" width="100%" />
 
 ``` r
 library(naniar)
