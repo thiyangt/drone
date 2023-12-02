@@ -45,3 +45,12 @@ data("worldbankdata")
 worldbankdata
 ```
 
+```{r}
+library(visdat)
+vis_miss(worldbankdata)
+```
+
+```{r}
+library(naniar)
+gg_miss_upset(worldbankdata)
+```

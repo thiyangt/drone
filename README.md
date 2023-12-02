@@ -45,3 +45,17 @@ worldbankdata
 #> 10 Aruba   ABW   Latin America & Caribbean  2020      NA       100   H     
 #> # ℹ 7,927 more rows
 ```
+
+``` r
+library(visdat)
+vis_miss(worldbankdata)
+```
+
+<img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
+
+``` r
+library(naniar)
+gg_miss_upset(worldbankdata)
+```
+
+<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
