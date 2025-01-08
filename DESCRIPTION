@@ -1,10 +1,10 @@
 Package: drone
-Title: Data Visualisation Geometries Encyclopedia
-Version: 0.0.0.9000
+Title: Data for Data Visualisation Geometries Encyclopedia
+Version: 1.0.0
 Authors@R: 
     person("Thiyanga S.", "Talagala", , "ttalagala@sjp.ac.lk", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-0656-9789"))
-Description: What the package does (one paragraph).
+Description: This is the companion package to the Data Visualization Geometries Encyclopedia, providing seamless access to the associated data.
 License: GPL (>= 2)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
