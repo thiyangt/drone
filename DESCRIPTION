@@ -5,15 +5,11 @@ Authors@R:
     person("Thiyanga S.", "Talagala", , "ttalagala@sjp.ac.lk", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-0656-9789"))
 Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+License: GPL (>= 2)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 Depends:
-    R (>= 4.4.2)
+    R (>= 4.4.0)
 Imports:
-    tibble (>= 1.4.1),
-    ggplot2 (>= 3.0.0),
-    dplyr (>= 1.0.0),
-    tidyr (>= 1.1.0),
-RoxygenNote: 7.2.3
+    utils
+RoxygenNote: 7.3.1

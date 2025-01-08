@@ -7,6 +7,11 @@
 #' @usage data(worldbankdata)
 #'
 #' @format A data frame with 7937 rows and 7 variables.
+#' @examples
+#' data(worldbankdata)
+#' head(worldbankdata)
+#' summary(worldbankdata)
+#' @export
 #' \describe{
 #' \item{Country}{Country name},
 #' \item{Code}{Country code},
@@ -17,8 +22,4 @@
 #' \item{Income}{a factor denoting income group (L - Low income, LM - Low middle income, UM - Upper middle income, HI - High income)}}
 #' }
 #' @source The World Bank Data Catalogue (accessed on 1 Dec 2023)
-#' @examples
-#' data(worldbankdata)
-#' head(worldbankdata)
-#' summary(worldbankdata)
 "worldbankdata"

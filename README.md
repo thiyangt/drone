@@ -6,7 +6,9 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of drone is to …
+This package serves as a companion to the [Data Visualization Geometries
+Encyclopedia](https://thiyangt.github.io/geom.encyclopedia/) by
+[Thiyanga S. Talagala](https://thiyanga.netlify.app/)
 
 ## Installation
 
@@ -20,7 +22,7 @@ devtools::install_github("thiyangt/drone")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+Load datasets related to the Encyclopedia
 
 ``` r
 library(drone)
