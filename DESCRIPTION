@@ -6,6 +6,8 @@ Authors@R:
            comment = c(ORCID = "0000-0002-0656-9789"))
 Description: This is the companion package to the Data Visualization Geometries Encyclopedia, providing seamless access to the associated data.
 License: GPL (>= 2)
+URL: https://github.com/thiyangt/geom.encyclopedia
+BugReports: https://github.com/thiyangt/drone/issues
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 Depends:
