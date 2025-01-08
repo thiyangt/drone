@@ -6,7 +6,7 @@
 #' @docType data
 #' @usage data(worldbankdata)
 #'
-#' @format A data frame with n rows and m variables.
+#' @format A data frame with 7937 rows and 7 variables.
 #' \describe{
 #' \item{Country}{Country name},
 #' \item{Code}{Country code},

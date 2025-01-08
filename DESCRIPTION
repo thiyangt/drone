@@ -1,12 +1,19 @@
 Package: drone
-Title: Data for geom encyclopaedia
+Title: Data Visualisation Geometries Encyclopedia
 Version: 0.0.0.9000
 Authors@R: 
-    person("Thiyanga", "Talagala", , "ttalagala@sjp.ac.lk", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+    person("Thiyanga S.", "Talagala", , "ttalagala@sjp.ac.lk", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0656-9789"))
 Description: What the package does (one paragraph).
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
+Depends:
+    R (>= 4.4.2)
+Imports:
+    tibble (>= 1.4.1),
+    ggplot2 (>= 3.0.0),
+    dplyr (>= 1.0.0),
+    tidyr (>= 1.1.0),
 RoxygenNote: 7.2.3
