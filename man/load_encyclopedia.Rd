@@ -12,3 +12,6 @@ Opens Data Visualisation Geometries Encyclopedia Book on your browser
 \description{
 This function loads Data Visualisation Geometries Encyclopedia Book
 }
+\examples{
+load_encyclopedia()
+}

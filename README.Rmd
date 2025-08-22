@@ -29,7 +29,7 @@ You can install the development version of drone from [GitHub](https://github.co
 devtools::install_github("thiyangt/drone")
 ```
 
-## Example
+## Dataset
 
 
 Load datasets related to the Encyclopedia
@@ -57,6 +57,9 @@ library(naniar)
 gg_miss_upset(worldbankdata)
 ```
 
+### Extract geoms
+
 ```{r}
+library(ggplot2)
 drone::extract_geoms(ggplot2, "^geom_s")
 ```

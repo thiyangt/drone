@@ -5,7 +5,7 @@
 #'@importFrom utils browseURL
 #'@return  Opens Data Visualisation Geometries Encyclopedia Book on your browser
 #'@export
-#'@example
+#'@examples
 #'load_encyclopedia()
 load_encyclopedia <- function() {
   url <- "https://thiyangt.github.io/geom.encyclopedia/"

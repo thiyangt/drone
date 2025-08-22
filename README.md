@@ -4,6 +4,7 @@
 # drone: **D**ata fo**R** ge**O**m e**N**cyclopa**E**dia
 
 <!-- badges: start -->
+
 <!-- badges: end -->
 
 This package serves as a companion to the [Data Visualization Geometries
@@ -20,7 +21,7 @@ You can install the development version of drone from
 devtools::install_github("thiyangt/drone")
 ```
 
-## Example
+## Dataset
 
 Load datasets related to the Encyclopedia
 
@@ -67,3 +68,12 @@ gg_miss_upset(worldbankdata)
 ```
 
 <img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
+
+### Extract geoms
+
+``` r
+library(ggplot2)
+drone::extract_geoms(ggplot2, "^geom_s")
+#> [1] "geom_segment"  "geom_sf"       "geom_sf_label" "geom_sf_text" 
+#> [5] "geom_smooth"   "geom_spoke"    "geom_step"
+```
