@@ -56,3 +56,7 @@ vis_miss(worldbankdata)
 library(naniar)
 gg_miss_upset(worldbankdata)
 ```
+
+```{r}
+drone::extract_geoms(ggplot2, "^geom_s")
+```
