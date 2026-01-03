@@ -31,6 +31,26 @@ library(drone)
 
 ``` r
 library(tibble)
+data("WorldHappinessScore")
+WorldHappinessScore
+#> # A tibble: 145 × 5
+#>    flagCode country     WorldHappinessScore_2024 WorldHappinessScore_2023
+#>    <chr>    <chr>                          <dbl>                    <dbl>
+#>  1 FI       Finland                         7.74                     7.80
+#>  2 DK       Denmark                         7.58                     7.59
+#>  3 IS       Iceland                         7.53                     7.53
+#>  4 SE       Sweden                          7.34                     7.40
+#>  5 IL       Israel                          7.34                     7.47
+#>  6 NL       Netherlands                     7.32                     7.40
+#>  7 NO       Norway                          7.3                      7.32
+#>  8 LU       Luxembourg                      7.12                     7.23
+#>  9 AU       Australia                       7.06                     7.10
+#> 10 CH       Switzerland                     7.06                     7.24
+#> # ℹ 135 more rows
+#> # ℹ 1 more variable: WorldHappinessScore_2022 <dbl>
+```
+
+``` r
 data("worldbankdata")
 worldbankdata
 #> # A tibble: 7,937 × 7
@@ -54,20 +74,20 @@ library(visdat)
 vis_dat(worldbankdata)
 ```
 
-<img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
 
 ``` r
 vis_miss(worldbankdata)
 ```
 
-<img src="man/figures/README-unnamed-chunk-2-2.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-4-2.png" width="100%" />
 
 ``` r
 library(naniar)
 gg_miss_upset(worldbankdata)
 ```
 
-<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
 
 ### Extract geoms
 
