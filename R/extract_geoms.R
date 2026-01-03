@@ -13,9 +13,11 @@
 #'@return A character vector containing the names of the functions that match 
 #'   the prefix inside the given package.
 #'@export
-#'@examples 
-#'library(ggplot2)
-#'extract_geoms(ggplot2, "^geom_s")
+#'@examples
+#' if (requireNamespace("ggplot2", quietly = TRUE)) {
+#'   extract_geoms(ggplot2, "^geom_s")
+#' }
+
 extract_geoms <- function(pkg, prefix = "^geom_") {
   # Ensure pkg is a character
   pkg <- as.character(substitute(pkg))

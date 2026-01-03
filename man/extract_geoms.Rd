@@ -23,6 +23,7 @@ that begin with a given prefix (e.g., \code{"geom_"}). It is useful for quickly
 identifying available \code{geom_} functions in packages like \strong{ggplot2} or \strong{ggalt}.
 }
 \examples{
-library(ggplot2)
-extract_geoms(ggplot2, "^geom_s")
+if (requireNamespace("ggplot2", quietly = TRUE)) {
+  extract_geoms(ggplot2, "^geom_s")
+}
 }

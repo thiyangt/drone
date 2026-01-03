@@ -39,9 +39,13 @@ library(drone)
 ```
 
 
-
-```{r cars}
+```{r}
 library(tibble)
+data("WorldHappinessScore")
+WorldHappinessScore
+```
+
+```{r}
 data("worldbankdata")
 worldbankdata
 ```

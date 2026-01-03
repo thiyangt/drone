@@ -151,3 +151,10 @@ worldbankdata <- worldbankdata |>
   mutate(across(where(is.numeric), ~round(., 2)))
 #View(worldbankdata)
 save(worldbankdata, file = "data/worldbankdata.RData")
+
+## 2026 Jan 3
+library(readr)
+happiest_countries_in_the_world_2025 <- read_csv("data-raw/happiest-countries-in-the-world-2025.csv")
+View(happiest_countries_in_the_world_2025)
+WorldHappinessScore <- happiest_countries_in_the_world_2025
+usethis::use_data(WorldHappinessScore)
