@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 
 This package serves as a companion to the [Data Visualization Geometries Encyclopedia](https://thiyangt.github.io/geom.encyclopedia/) by [Thiyanga S. Talagala](https://thiyanga.netlify.app/)
 
-## Installation
+# Installation
 
 You can install the development version of drone from [GitHub](https://github.com/) with:
 
@@ -29,21 +29,33 @@ You can install the development version of drone from [GitHub](https://github.co
 devtools::install_github("thiyangt/drone")
 ```
 
-## Dataset
+# Datasets
 
 
 Load datasets related to the Encyclopedia
 
 ```{r example}
 library(drone)
+library(visdat)
+library(naniar)
 ```
 
+## `happiness_gdp_income`
 
 ```{r}
 library(tibble)
-data("WorldHappinessScore")
-WorldHappinessScore
+data("happiness_gdp_income")
+happiness_gdp_income
 ```
+
+
+```{r, warning=FALSE, message=FALSE}
+vis_dat(happiness_gdp_income)
+vis_miss(happiness_gdp_income)
+gg_miss_upset(happiness_gdp_income)
+```
+
+## `worldbankdata`
 
 ```{r}
 data("worldbankdata")
@@ -51,13 +63,11 @@ worldbankdata
 ```
 
 ```{r}
-library(visdat)
 vis_dat(worldbankdata)
 vis_miss(worldbankdata)
 ```
 
 ```{r}
-library(naniar)
 gg_miss_upset(worldbankdata)
 ```
 

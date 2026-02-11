@@ -11,7 +11,7 @@ This package serves as a companion to the [Data Visualization Geometries
 Encyclopedia](https://thiyangt.github.io/geom.encyclopedia/) by
 [Thiyanga S. Talagala](https://thiyanga.netlify.app/)
 
-## Installation
+# Installation
 
 You can install the development version of drone from
 [GitHub](https://github.com/) with:
@@ -21,34 +21,60 @@ You can install the development version of drone from
 devtools::install_github("thiyangt/drone")
 ```
 
-## Dataset
+# Datasets
 
 Load datasets related to the Encyclopedia
 
 ``` r
 library(drone)
+library(visdat)
+library(naniar)
 ```
+
+## `happiness_gdp_income`
 
 ``` r
 library(tibble)
-data("WorldHappinessScore")
-WorldHappinessScore
-#> # A tibble: 145 × 5
-#>    flagCode country     WorldHappinessScore_2024 WorldHappinessScore_2023
-#>    <chr>    <chr>                          <dbl>                    <dbl>
-#>  1 FI       Finland                         7.74                     7.80
-#>  2 DK       Denmark                         7.58                     7.59
-#>  3 IS       Iceland                         7.53                     7.53
-#>  4 SE       Sweden                          7.34                     7.40
-#>  5 IL       Israel                          7.34                     7.47
-#>  6 NL       Netherlands                     7.32                     7.40
-#>  7 NO       Norway                          7.3                      7.32
-#>  8 LU       Luxembourg                      7.12                     7.23
-#>  9 AU       Australia                       7.06                     7.10
-#> 10 CH       Switzerland                     7.06                     7.24
-#> # ℹ 135 more rows
-#> # ℹ 1 more variable: WorldHappinessScore_2022 <dbl>
+data("happiness_gdp_income")
+happiness_gdp_income
+#> # A tibble: 158 × 11
+#>    Country     Region     HappinessScore2015 GDPpercapita2015 HappinessScore2016
+#>    <chr>       <chr>                   <dbl>            <dbl>              <dbl>
+#>  1 Switzerland Western E…               7.59             1.40               7.51
+#>  2 Iceland     Western E…               7.56             1.30               7.50
+#>  3 Denmark     Western E…               7.53             1.33               7.53
+#>  4 Norway      Western E…               7.52             1.46               7.50
+#>  5 Canada      North Ame…               7.43             1.33               7.40
+#>  6 Finland     Western E…               7.41             1.29               7.41
+#>  7 Netherlands Western E…               7.38             1.33               7.34
+#>  8 Sweden      Western E…               7.36             1.33               7.29
+#>  9 New Zealand Australia…               7.29             1.25               7.33
+#> 10 Australia   Australia…               7.28             1.33               7.31
+#> # ℹ 148 more rows
+#> # ℹ 6 more variables: GDPpercapita2016 <dbl>, HappinessScore2017 <dbl>,
+#> #   GDPpercapita2017 <dbl>, Income2015 <fct>, Income2016 <fct>,
+#> #   Income2017 <fct>
 ```
+
+``` r
+vis_dat(happiness_gdp_income)
+```
+
+<img src="man/figures/README-unnamed-chunk-3-1.png" alt="" width="100%" />
+
+``` r
+vis_miss(happiness_gdp_income)
+```
+
+<img src="man/figures/README-unnamed-chunk-3-2.png" alt="" width="100%" />
+
+``` r
+gg_miss_upset(happiness_gdp_income)
+```
+
+<img src="man/figures/README-unnamed-chunk-3-3.png" alt="" width="100%" />
+
+## `worldbankdata`
 
 ``` r
 data("worldbankdata")
@@ -70,24 +96,22 @@ worldbankdata
 ```
 
 ``` r
-library(visdat)
 vis_dat(worldbankdata)
 ```
 
-<img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-5-1.png" alt="" width="100%" />
 
 ``` r
 vis_miss(worldbankdata)
 ```
 
-<img src="man/figures/README-unnamed-chunk-4-2.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-5-2.png" alt="" width="100%" />
 
 ``` r
-library(naniar)
 gg_miss_upset(worldbankdata)
 ```
 
-<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-6-1.png" alt="" width="100%" />
 
 ### Extract geoms
 
