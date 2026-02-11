@@ -10,6 +10,9 @@ library(readr)
 library(here)
 library(readxl)
 
+## Restrictions to use
+# https://datacatalog.worldbank.org/getting-started
+
 ## data sources
 # data 1: CLASS.xlsx
 # https://datacatalog.worldbank.org/search/dataset/0037712/World-Development-Indicators
