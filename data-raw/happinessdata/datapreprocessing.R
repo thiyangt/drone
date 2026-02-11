@@ -77,3 +77,10 @@ happiness_gdp_income <- left_join(happiness_gdp,
                                   data_income,
                                   by="Country")
 View(happiness_gdp_income)
+happiness_gdp_income <- happiness_gdp_income |>
+  mutate(Income2015 = as.factor(Income2015),
+         Income2016 = as.factor(Income2016),
+         Income2017 = as.factor(Income2017))
+head(happiness_gdp_income)
+write_csv(happiness_gdp_income, file = here("data-raw", "happinessdata", "happiness_gdp_income.csv"))
+usethis::use_data(happiness_gdp_income, overwrite = TRUE)

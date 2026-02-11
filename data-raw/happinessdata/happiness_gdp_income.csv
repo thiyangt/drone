@@ -1,0 +1,159 @@
+Country,Region,HappinessScore2015,GDPpercapita2015,HappinessScore2016,GDPpercapita2016,HappinessScore2017,GDPpercapita2017,Income2015,Income2016,Income2017
+Switzerland,Western Europe,7.587,1.39651,7.509,7.59,7.49399995803833,1.56497955322266,High income,High income,High income
+Iceland,Western Europe,7.561,1.30232,7.501,7.669,7.50400018692017,1.480633020401,High income,High income,High income
+Denmark,Western Europe,7.527,1.32548,7.526,7.592,7.52199983596802,1.48238301277161,High income,High income,High income
+Norway,Western Europe,7.522,1.459,7.498,7.575,7.53700017929077,1.61646318435669,High income,High income,High income
+Canada,North America,7.427,1.32629,7.404,7.473,7.31599998474121,1.47920441627502,High income,High income,High income
+Finland,Western Europe,7.406,1.29025,7.413,7.475,7.4689998626709,1.44357192516327,High income,High income,High income
+Netherlands,Western Europe,7.378,1.32944,7.339,7.394,7.3769998550415,1.50394463539124,High income,High income,High income
+Sweden,Western Europe,7.364,1.33171,7.291,7.355,7.28399991989136,1.49438726902008,High income,High income,High income
+New Zealand,Australia and New Zealand,7.286,1.25018,7.334,7.404,7.31400012969971,1.40570604801178,High income,High income,High income
+Australia,Australia and New Zealand,7.284,1.33358,7.313,7.385,7.28399991989136,1.484414935112,High income,High income,High income
+Israel,Middle East and Northern Africa,7.278,1.22857,7.267,7.335,7.21299982070923,1.37538242340088,High income,High income,High income
+Costa Rica,Latin America and Caribbean,7.226,0.95578,7.087,7.175,7.0789999961853,1.10970628261566,Upper middle income,Upper middle income,Upper middle income
+Austria,Western Europe,7.2,1.33723,7.119,7.193,7.00600004196167,1.48709726333618,High income,High income,High income
+Mexico,Latin America and Caribbean,7.187,1.02054,6.778,6.876,6.57800006866455,1.15318381786346,Upper middle income,Upper middle income,Upper middle income
+United States,North America,7.119,1.39451,7.104,7.188,6.99300003051758,1.54625928401947,High income,High income,High income
+Brazil,Latin America and Caribbean,6.983,0.98124,6.952,7.029,6.63500022888184,1.10735321044922,Upper middle income,Upper middle income,Upper middle income
+Luxembourg,Western Europe,6.946,1.56391,6.871,6.938,6.86299991607666,1.74194359779358,High income,High income,High income
+Ireland,Western Europe,6.94,1.33596,6.907,6.978,6.97700023651123,1.53570663928986,High income,High income,High income
+Belgium,Western Europe,6.937,1.30782,6.929,6.997,6.89099979400635,1.46378076076508,High income,High income,High income
+United Arab Emirates,Middle East and Northern Africa,6.901,1.42727,6.573,6.652,6.64799976348877,1.62634336948395,High income,High income,High income
+United Kingdom,Western Europe,6.867,1.26637,6.725,6.803,6.71400022506714,1.44163393974304,High income,High income,High income
+Oman,Middle East and Northern Africa,6.853,1.36011,NA,NA,NA,NA,High income,High income,High income
+Venezuela,Latin America and Caribbean,6.81,1.04424,6.084,6.195,5.25,1.12843120098114,NA,NA,NA
+Singapore,Southeastern Asia,6.798,1.52186,6.739,6.804,6.57200002670288,1.69227766990662,High income,High income,High income
+Panama,Latin America and Caribbean,6.786,1.06353,6.701,6.801,6.4520001411438,1.23374843597412,Upper middle income,Upper middle income,Upper middle income
+Germany,Western Europe,6.75,1.32792,6.994,7.058,6.95100021362305,1.48792338371277,High income,High income,High income
+Chile,Latin America and Caribbean,6.67,1.10715,6.705,6.795,6.65199995040894,1.25278460979462,High income,High income,High income
+Qatar,Middle East and Northern Africa,6.611,1.69042,6.375,6.572,6.375,1.87076568603516,High income,High income,High income
+France,Western Europe,6.575,1.27778,6.478,6.559,6.44199991226196,1.43092346191406,High income,High income,High income
+Argentina,Latin America and Caribbean,6.574,1.05351,6.65,6.74,6.59899997711182,1.18529546260834,High income,Upper middle income,Upper middle income
+Czech Republic,Central and Eastern Europe,6.505,1.17898,6.596,6.677,6.60900020599365,1.35268235206604,NA,NA,NA
+Uruguay,Latin America and Caribbean,6.485,1.06166,6.545,6.634,6.4539999961853,1.21755969524384,High income,High income,High income
+Colombia,Latin America and Caribbean,6.477,0.91861,6.481,6.578,6.35699987411499,1.07062232494354,Upper middle income,Upper middle income,Upper middle income
+Thailand,Southeastern Asia,6.455,0.9669,6.474,6.552,6.42399978637695,1.12786877155304,Upper middle income,Upper middle income,Upper middle income
+Saudi Arabia,Middle East and Northern Africa,6.411,1.39541,6.379,6.471,6.3439998626709,1.53062355518341,High income,High income,High income
+Spain,Western Europe,6.329,1.23011,6.361,6.434,6.40299987792969,1.38439786434174,High income,High income,High income
+Malta,Western Europe,6.302,1.2074,6.488,6.567,6.52699995040894,1.34327983856201,High income,High income,High income
+Taiwan,Eastern Asia,6.298,1.29098,6.379,6.453,NA,NA,NA,NA,NA
+Kuwait,Middle East and Northern Africa,6.295,1.55422,6.239,6.324,6.10500001907349,1.63295245170593,High income,High income,High income
+Suriname,Latin America and Caribbean,6.269,0.99534,6.269,6.465,NA,NA,Upper middle income,Upper middle income,Upper middle income
+Trinidad and Tobago,Latin America and Caribbean,6.168,1.21183,6.168,6.386,6.16800022125244,1.36135590076447,High income,High income,High income
+El Salvador,Latin America and Caribbean,6.13,0.76454,6.068,6.169,6.00299978256226,0.909784495830536,Lower middle income,Lower middle income,Lower middle income
+Guatemala,Latin America and Caribbean,6.123,0.74553,6.324,6.435,6.4539999961853,0.872001945972443,Lower middle income,Lower middle income,Lower middle income
+Uzbekistan,Central and Eastern Europe,6.003,0.63244,5.987,6.078,5.97100019454956,0.786441087722778,Lower middle income,Lower middle income,Lower middle income
+Slovakia,Central and Eastern Europe,5.995,1.16891,6.078,6.16,6.09800004959106,1.32539355754852,NA,NA,NA
+Japan,Eastern Asia,5.987,1.27074,5.921,5.992,5.92000007629395,1.41691517829895,High income,High income,High income
+South Korea,Eastern Asia,5.984,1.24461,5.835,5.923,5.83799982070923,1.40167844295502,NA,NA,NA
+Ecuador,Latin America and Caribbean,5.975,0.86402,5.976,6.072,6.00799989700317,1.00082039833069,Upper middle income,Upper middle income,Upper middle income
+Bahrain,Middle East and Northern Africa,5.96,1.32376,6.218,6.308,6.08699989318848,1.48841226100922,High income,High income,High income
+Italy,Western Europe,5.948,1.25114,5.977,6.056,5.96400022506714,1.39506661891937,High income,High income,High income
+Bolivia,Latin America and Caribbean,5.89,0.68133,5.822,5.904,5.82299995422363,0.833756566047668,Lower middle income,Lower middle income,Lower middle income
+Moldova,Central and Eastern Europe,5.889,0.59448,5.897,5.971,5.83799982070923,0.728870630264282,Lower middle income,Lower middle income,Lower middle income
+Paraguay,Latin America and Caribbean,5.878,0.75985,5.538,5.623,5.49300003051758,0.932537317276001,Upper middle income,Upper middle income,Upper middle income
+Kazakhstan,Central and Eastern Europe,5.855,1.12254,5.919,6.001,5.81899976730347,1.28455626964569,Upper middle income,Upper middle income,Upper middle income
+Slovenia,Central and Eastern Europe,5.848,1.18498,5.768,5.853,5.75799989700317,1.3412059545517,High income,High income,High income
+Lithuania,Central and Eastern Europe,5.833,1.14723,5.813,5.892,5.90199995040894,1.31458234786987,High income,High income,High income
+Nicaragua,Latin America and Caribbean,5.828,0.59325,5.992,6.107,6.07100009918213,0.737299203872681,Lower middle income,Lower middle income,Lower middle income
+Peru,Latin America and Caribbean,5.824,0.90019,5.743,5.839,5.71500015258789,1.03522527217865,Upper middle income,Upper middle income,Upper middle income
+Belarus,Central and Eastern Europe,5.813,1.03192,5.802,5.881,5.56899976730347,1.15655755996704,Upper middle income,Upper middle income,Upper middle income
+Poland,Central and Eastern Europe,5.791,1.12555,5.835,5.921,5.97300004959106,1.29178786277771,High income,High income,High income
+Malaysia,Southeastern Asia,5.77,1.12486,6.005,6.089,6.08400011062622,1.29121541976929,Upper middle income,Upper middle income,Upper middle income
+Croatia,Central and Eastern Europe,5.759,1.08254,5.488,5.574,5.29300022125244,1.22255623340607,High income,High income,Upper middle income
+Libya,Middle East and Northern Africa,5.754,1.13145,5.615,5.824,5.52500009536743,1.10180306434631,Upper middle income,Upper middle income,Upper middle income
+Russia,Central and Eastern Europe,5.716,1.13764,5.856,5.923,5.96299982070923,1.28177809715271,NA,NA,NA
+Jamaica,Latin America and Caribbean,5.709,0.81038,5.51,5.705,5.31099987030029,0.925579309463501,Upper middle income,Upper middle income,Upper middle income
+North Cyprus,Western Europe,5.695,1.20806,5.771,5.872,5.80999994277954,1.3469113111496,NA,NA,NA
+Cyprus,Western Europe,5.689,1.20813,5.546,5.65,5.62099981307983,1.35593807697296,High income,High income,High income
+Algeria,Middle East and Northern Africa,5.605,0.93929,6.355,6.483,5.87200021743774,1.09186446666718,Upper middle income,Upper middle income,Upper middle income
+Kosovo,Central and Eastern Europe,5.589,0.80148,5.401,5.494,5.27899980545044,0.951484382152557,Lower middle income,Lower middle income,Lower middle income
+Turkmenistan,Central and Eastern Europe,5.548,0.95847,5.658,5.736,5.82200002670288,1.13077676296234,Upper middle income,Upper middle income,Upper middle income
+Mauritius,Sub-Saharan Africa,5.477,1.00761,5.648,5.789,5.62900018692017,1.18939554691315,Upper middle income,Upper middle income,Upper middle income
+Hong Kong,Eastern Asia,5.474,1.38604,5.458,5.554,NA,NA,NA,NA,NA
+Estonia,Central and Eastern Europe,5.429,1.15174,5.517,5.597,5.61100006103516,1.32087934017181,High income,High income,High income
+Indonesia,Southeastern Asia,5.399,0.82827,5.314,5.391,5.26200008392334,0.995538592338562,Lower middle income,Lower middle income,Lower middle income
+Vietnam,Southeastern Asia,5.36,0.63216,5.061,5.131,5.07399988174438,0.788547575473785,NA,NA,NA
+Turkey,Middle East and Northern Africa,5.332,1.06098,5.389,5.483,5.5,1.19827437400818,NA,NA,NA
+Kyrgyzstan,Central and Eastern Europe,5.286,0.47428,5.185,5.267,5.00400018692017,0.596220076084137,NA,NA,NA
+Nigeria,Sub-Saharan Africa,5.268,0.65435,4.875,5,5.07399988174438,0.783756256103516,Lower middle income,Lower middle income,Lower middle income
+Bhutan,Southern Asia,5.253,0.77042,5.196,5.254,5.01100015640259,0.885416388511658,Lower middle income,Lower middle income,Lower middle income
+Azerbaijan,Central and Eastern Europe,5.212,1.02389,5.291,5.356,5.23400020599365,1.15360176563263,Upper middle income,Upper middle income,Upper middle income
+Pakistan,Southern Asia,5.194,0.59543,5.132,5.226,5.26900005340576,0.72688353061676,Lower middle income,Lower middle income,Lower middle income
+Jordan,Middle East and Northern Africa,5.192,0.90198,5.303,5.419,5.33599996566772,0.991012394428253,Upper middle income,Upper middle income,Lower middle income
+Montenegro,Central and Eastern Europe,5.192,0.97438,5.161,5.267,5.23699998855591,1.12112903594971,Upper middle income,Upper middle income,Upper middle income
+China,Eastern Asia,5.14,0.89012,5.245,5.291,5.27299976348877,1.08116579055786,Upper middle income,Upper middle income,Upper middle income
+Zambia,Sub-Saharan Africa,5.129,0.47038,4.795,4.945,4.51399993896484,0.636406779289246,Lower middle income,Lower middle income,Lower middle income
+Romania,Central and Eastern Europe,5.124,1.04345,5.528,5.629,5.82499980926514,1.21768391132355,Upper middle income,Upper middle income,Upper middle income
+Serbia,Central and Eastern Europe,5.123,0.92053,5.177,5.271,5.39499998092651,1.06931757926941,Upper middle income,Upper middle income,Upper middle income
+Portugal,Western Europe,5.102,1.15991,5.123,5.216,5.19500017166138,1.3151752948761,High income,High income,High income
+Latvia,Central and Eastern Europe,5.098,1.11312,5.56,5.634,5.84999990463257,1.26074862480164,High income,High income,High income
+Philippines,Southeastern Asia,5.073,0.70532,5.279,5.398,5.42999982833862,0.85769921541214,Lower middle income,Lower middle income,Lower middle income
+Somaliland region,Sub-Saharan Africa,5.057,0.18847,NA,NA,NA,NA,NA,NA,NA
+Morocco,Middle East and Northern Africa,5.013,0.73479,5.151,5.244,5.2350001335144,0.878114581108093,Lower middle income,Lower middle income,Lower middle income
+Macedonia,Central and Eastern Europe,5.007,0.91851,5.121,5.225,5.17500019073486,1.06457793712616,NA,NA,NA
+Mozambique,Sub-Saharan Africa,4.971,0.08308,NA,NA,4.55000019073486,0.234305649995804,Low income,Low income,Low income
+Albania,Central and Eastern Europe,4.959,0.87867,4.655,4.764,4.64400005340576,0.996192753314972,Upper middle income,Upper middle income,Upper middle income
+Bosnia and Herzegovina,Central and Eastern Europe,4.949,0.83223,5.163,5.263,5.18200016021729,0.982409417629242,Upper middle income,Upper middle income,Upper middle income
+Lesotho,Sub-Saharan Africa,4.898,0.37545,NA,NA,3.80800008773804,0.521021246910095,Lower middle income,Lower middle income,Lower middle income
+Dominican Republic,Latin America and Caribbean,4.885,0.89537,5.155,5.273,5.23000001907349,1.07937383651733,Upper middle income,Upper middle income,Upper middle income
+Laos,Southeastern Asia,4.876,0.59066,4.876,5.01,NA,NA,NA,NA,NA
+Mongolia,Eastern Asia,4.874,0.82819,4.907,4.976,4.95499992370605,1.02723586559296,Upper middle income,Lower middle income,Lower middle income
+Swaziland,Sub-Saharan Africa,4.867,0.71206,NA,NA,NA,NA,NA,NA,NA
+Greece,Western Europe,4.857,1.15406,5.033,5.131,5.22700023651123,1.28948748111725,High income,High income,High income
+Lebanon,Middle East and Northern Africa,4.839,1.02564,5.129,5.227,5.22499990463257,1.07498753070831,Upper middle income,Upper middle income,Upper middle income
+Hungary,Central and Eastern Europe,4.8,1.12094,5.145,5.234,5.32399988174438,1.2860119342804,High income,High income,High income
+Honduras,Latin America and Caribbean,4.788,0.59532,4.871,4.992,5.18100023269653,0.730573117733002,Lower middle income,Lower middle income,Lower middle income
+Tajikistan,Central and Eastern Europe,4.786,0.39047,4.996,5.069,5.04099988937378,0.524713635444641,Lower middle income,Lower middle income,Lower middle income
+Tunisia,Middle East and Northern Africa,4.739,0.88113,5.045,5.125,4.80499982833862,1.00726580619812,Upper middle income,Lower middle income,Lower middle income
+Palestinian Territories,Middle East and Northern Africa,4.715,0.59867,4.754,4.859,4.77500009536743,0.716249227523804,NA,NA,NA
+Bangladesh,Southern Asia,4.694,0.39753,4.643,4.726,4.60799980163574,0.586682975292206,Lower middle income,Lower middle income,Lower middle income
+Iran,Middle East and Northern Africa,4.686,1.0088,4.813,4.923,4.69199991226196,1.15687310695648,NA,NA,NA
+Ukraine,Central and Eastern Europe,4.681,0.79907,4.324,4.412,4.09600019454956,0.89465194940567,Lower middle income,Lower middle income,Lower middle income
+Iraq,Middle East and Northern Africa,4.677,0.98549,4.575,4.704,4.49700021743774,1.10271048545837,Upper middle income,Upper middle income,Upper middle income
+South Africa,Sub-Saharan Africa,4.642,0.92049,4.459,4.547,4.8289999961853,1.05469870567322,Upper middle income,Upper middle income,Upper middle income
+Ghana,Sub-Saharan Africa,4.633,0.54558,4.276,4.367,4.11999988555908,0.667224824428558,Lower middle income,Lower middle income,Lower middle income
+Zimbabwe,Sub-Saharan Africa,4.61,0.271,4.193,4.285,3.875,0.375846534967422,Low income,Low income,Low income
+Liberia,Sub-Saharan Africa,4.571,0.0712,3.622,3.781,3.53299999237061,0.119041793048382,Low income,Low income,Low income
+India,Southern Asia,4.565,0.64499,4.404,4.457,4.31500005722046,0.792221248149872,Lower middle income,Lower middle income,Lower middle income
+Sudan,Sub-Saharan Africa,4.55,0.52107,4.139,4.35,4.13899993896484,0.65951669216156,Lower middle income,Lower middle income,Lower middle income
+Haiti,Latin America and Caribbean,4.518,0.26673,4.028,4.163,3.6029999256134,0.368610262870789,Low income,Low income,Low income
+Congo (Kinshasa),Sub-Saharan Africa,4.517,0,4.272,4.353,4.28000020980835,0.0921023488044739,NA,NA,NA
+Nepal,Southern Asia,4.514,0.35997,4.793,4.888,4.96199989318848,0.479820191860199,Low income,Low income,Low income
+Ethiopia,Sub-Saharan Africa,4.512,0.19073,4.508,4.591,4.46000003814697,0.339233845472336,Low income,Low income,Low income
+Sierra Leone,Sub-Saharan Africa,4.507,0.33024,4.635,4.765,4.70900011062622,0.36842092871666,Low income,Low income,Low income
+Mauritania,Sub-Saharan Africa,4.436,0.45407,4.201,4.275,4.29199981689453,0.648457288742065,Lower middle income,Lower middle income,Lower middle income
+Kenya,Sub-Saharan Africa,4.419,0.36471,4.356,4.453,4.55299997329712,0.560479462146759,Lower middle income,Lower middle income,Lower middle income
+Djibouti,Sub-Saharan Africa,4.369,0.44025,NA,NA,NA,NA,Lower middle income,Lower middle income,Lower middle income
+Armenia,Central and Eastern Europe,4.35,0.76821,4.36,4.454,4.37599992752075,0.900596737861633,Lower middle income,Lower middle income,Lower middle income
+Botswana,Sub-Saharan Africa,4.332,0.99355,3.974,4.073,3.76600003242493,1.12209415435791,Upper middle income,Upper middle income,Upper middle income
+Myanmar,Southeastern Asia,4.307,0.27108,4.395,4.463,4.54500007629395,0.367110550403595,Lower middle income,Lower middle income,Lower middle income
+Georgia,Central and Eastern Europe,4.297,0.7419,4.252,4.34,4.28599977493286,0.950612664222717,Lower middle income,Upper middle income,Lower middle income
+Malawi,Sub-Saharan Africa,4.292,0.01604,4.156,4.271,3.97000002861023,0.233442038297653,Low income,Low income,Low income
+Sri Lanka,Southern Asia,4.271,0.83524,4.415,4.508,4.44000005722046,1.00985014438629,Lower middle income,Lower middle income,Lower middle income
+Cameroon,Sub-Saharan Africa,4.252,0.4225,4.513,4.609,4.69500017166138,0.564305365085602,Lower middle income,Lower middle income,Lower middle income
+Bulgaria,Central and Eastern Europe,4.218,1.01216,4.217,4.33,4.71400022506714,1.1614590883255,Upper middle income,Upper middle income,Upper middle income
+Egypt,Middle East and Northern Africa,4.194,0.8818,4.362,4.465,4.7350001335144,0.989701807498932,NA,NA,NA
+Yemen,Middle East and Northern Africa,4.077,0.54649,3.724,3.827,3.59299993515015,0.591683447360992,NA,NA,NA
+Angola,Sub-Saharan Africa,4.033,0.75778,3.866,3.979,3.79500007629395,0.858428180217743,Upper middle income,Upper middle income,Lower middle income
+Mali,Sub-Saharan Africa,3.995,0.26074,4.073,4.158,4.19000005722046,0.476180493831635,Low income,Low income,Low income
+Congo (Brazzaville),Sub-Saharan Africa,3.989,0.67866,4.236,4.365,4.29099988937378,0.808964252471924,NA,NA,NA
+Comoros,Sub-Saharan Africa,3.956,0.23906,3.956,4.052,NA,NA,Low income,Low income,Low income
+Uganda,Sub-Saharan Africa,3.931,0.21102,3.739,3.849,4.08099985122681,0.381430715322495,Low income,Low income,Low income
+Senegal,Sub-Saharan Africa,3.904,0.36498,4.219,4.287,4.53499984741211,0.479309022426605,Lower middle income,Low income,Low income
+Gabon,Sub-Saharan Africa,3.896,1.06024,4.121,4.212,4.46500015258789,1.1982102394104,Upper middle income,Upper middle income,Upper middle income
+Niger,Sub-Saharan Africa,3.845,0.0694,3.856,3.931,4.02799987792969,0.161925330758095,Low income,Low income,Low income
+Cambodia,Southeastern Asia,3.819,0.46038,3.907,4.016,4.16800022125244,0.601765096187592,Low income,Lower middle income,Lower middle income
+Tanzania,Sub-Saharan Africa,3.781,0.2852,3.666,3.771,3.34899997711182,0.511135876178741,Low income,Low income,Low income
+Madagascar,Sub-Saharan Africa,3.681,0.20824,3.695,3.769,3.64400005340576,0.305808693170547,Low income,Low income,Low income
+Central African Republic,Sub-Saharan Africa,3.678,0.0785,NA,NA,2.69300007820129,0,Low income,Low income,Low income
+Chad,Sub-Saharan Africa,3.667,0.34193,3.763,3.854,3.93600010871887,0.438012987375259,Low income,Low income,Low income
+Guinea,Sub-Saharan Africa,3.656,0.17417,3.607,3.681,3.50699996948242,0.244549930095673,Low income,Low income,Low income
+Ivory Coast,Sub-Saharan Africa,3.655,0.46534,3.916,4.006,4.17999982833862,0.603048920631409,NA,NA,NA
+Burkina Faso,Sub-Saharan Africa,3.587,0.25812,3.739,3.831,4.03200006484985,0.3502277135849,Low income,Low income,Low income
+Afghanistan,Southern Asia,3.575,0.31982,3.36,3.432,3.79399991035461,0.401477217674255,Low income,Low income,Low income
+Rwanda,Sub-Saharan Africa,3.465,0.22208,3.515,3.586,3.47099995613098,0.368745893239975,Low income,Low income,Low income
+Benin,Sub-Saharan Africa,3.34,0.28665,3.484,3.564,3.65700006484985,0.431085407733917,Low income,Low income,Low income
+Syria,Middle East and Northern Africa,3.006,0.6632,3.069,3.202,3.46199989318848,0.777153134346008,NA,NA,NA
+Burundi,Sub-Saharan Africa,2.905,0.0153,2.905,3.078,2.90499997138977,0.091622568666935,Low income,Low income,Low income
+Togo,Sub-Saharan Africa,2.839,0.20868,3.303,3.414,3.49499988555908,0.305444717407227,Low income,Low income,Low income
